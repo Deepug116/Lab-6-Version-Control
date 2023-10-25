@@ -41,4 +41,11 @@ if __name__ == '__main__':
             print("Your password has been encoded and stored!\n")
 
         elif user_input == 2:
+            if encoded_password is not None:
+                decoded_password = decode(encoded_password)
+                print(f"The encoded password is {encoded_password}, and the original password is {decoded_password}.\n")
+            else:
+                print("You need to encode a password first.\n")
+
+        elif user_input == 3:
             break
