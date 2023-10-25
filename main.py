@@ -22,7 +22,7 @@ def decode(encoded_password):
             dec_list[index_1] += 10
         index_1 += 1
     decoded_password = "".join(map(str, dec_list))  # This line structure is based on Deepak's commit to Annalisa's repo
-
+    
     return decoded_password
 
 if __name__ == '__main__':
@@ -32,7 +32,8 @@ if __name__ == '__main__':
         print("Menu")
         print("-------------")
         print("1. Encode")
-        print("2. Quit")
+        print("2. Decode")
+        print("3. Quit")
         user_input = int(input("Please enter an option: "))
 
         if user_input == 1:
